@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Анкета</title>
+
+        <style>
+            h1{
+                text-align: center;
+            }
+
+            #info{
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body bgcolor="#dddddd">
+        <h1>Анкета</h1>
+        <p id = "info">Заповнити анкету для вступу до клубу <i>"Віртуальна бібліотека"</i></p>
+        <fieldset>
+            <legend>Анкета</legend>
+            <form method="POST">
+                <p>Введіть імʼя:
+                <input name="name" size="30" placeholder="ПІП"></p>
+                <p>Пароль: <input name = "password" type="password" maxlength="5"></p>
+                <p>Стать: 
+                    <input name = "s" type = "radio" value="male"> <i>Чоловіча</i>
+                    <input name = "s" type = "radio" value="female"> <i>Жіноча</i>
+                </p>
+                <p>
+                    Рід діяльності: <br/>
+                    <input name = "arbeit" type = "checkbox" value = "student" checked> Студент<br/>
+                    <input name = "arbeit" type = "checkbox" value = "schuler"> Школяр<br/>
+                    <input name = "arbeit" type = "checkbox" value = "aspirant"> Аспірант<br/>
+                    <input name = "arbeit" type = "checkbox" value = "arbeiten"> Працюю
+                    <input name = "arbeit" type = "checkbox" value = "arbeiten_nicht"> Не працюю<br/>
+                </p>
+                <p>Які книги любиш читати?<br/>
+                    <select name = "favouriteBooks" multiple size="3">
+                        <option>Науково-пізнавальна</option>
+                        <option>Фантастика</option>
+                        <option>Фентезі</option>
+                        <option>Пригоди</option>
+                        <option selected>Історичні</option>
+                    </select>
+                </p>
+                <br/>
+                <p>
+                    Поділитися думкою про прочитане: <br/>
+                    <textarea name = "shareMean" rows="5" cols="40" placeholder="Поділіться думкою"></textarea>
+                </p>
+                <br/>
+                <p>Додадкова інформація <a href="https://www.google.com">по покликанню</a></p>
+                <input type="reset"><input type="submit">
+        </fieldset>
+        </form>
+    </body>
+</html>
